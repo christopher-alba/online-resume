@@ -1,0 +1,282 @@
+/* General Styles Begins */
+/* Navbar Vertical Begins */
+.navbar{
+  position:sticky;
+  top:0px;
+  z-index:1;
+  padding:0px !important;
+}
+.nav-item{
+  width:150px;
+  text-align:center;
+  padding:20px;
+  transition:500ms;
+}
+.navbar-toggler{
+  margin:30px;
+}
+.navbar-brand{
+  padding-left:50px;
+}
+.nav-item:hover{
+  background:#245d8f;
+  cursor:pointer;
+  transition:500ms;
+}
+.in-view{
+  background:#245d8f;
+}
+.navbar-dark .navbar-nav .nav-link{
+  color:white !important;
+  font-weight:200;
+}
+/* Navbar Vertical Ends */
+h2{
+  color:#245d8f;
+}
+/* General Styles Ends */
+/* Landing Area Begins */
+.landing{
+  height:100vh;
+  text-align:center;
+  background:url("/images/ocean.png");
+  background-size:cover;
+}
+.landing h1{
+  font-size:4rem;
+  color:white;
+  text-shadow:3px 3px 3px rgba(0,0,0,0.5);
+  font-weight:200;
+}
+.landingOverlay{
+  position:absolute;
+  top:0px;
+  width:100%;
+  height:100vh;
+  background:rgba(48, 159, 184,0.5);
+  z-index: 1;
+
+}
+.landing p{
+  font-size:2rem;
+  color:white;
+  font-weight:200;
+  text-shadow:2px 2px 2px rgba(255,255,255,0.5);
+}
+.landingText{
+  padding-top:45vh;
+  position:relative;
+  z-index: 2;
+}
+.hrlanding{
+  border:1px solid white;
+  width:50%;
+  margin:0 auto 0 auto;
+}
+.scrollDown{
+  height:8vw;
+  width:8vw;
+  position:absolute;
+  bottom:0px;
+  background:#245B69;
+  right:101px;
+  cursor: pointer;
+  z-index: 2
+}
+@media(max-width:600px){
+  .scrollDown{
+    width:100%;
+    height:70px;
+    right:0px;
+
+  }
+  .scrollDown img{
+    width:50px !important;
+  }
+}
+.scrollDown:hover{
+  background:rgba(255, 255, 255,0.5);
+}
+.scrollDown img{
+  width:90%;
+  position: relative;
+  bottom:-5px;
+}
+/* Landing Area Ends */
+/* About Me Area Begins */
+.profileImg{
+  width:80%;
+  border-radius:50%;
+  border:5px solid white;
+}
+.aboutMe{
+  min-height:101vh;
+  background:white;
+  padding-bottom:100px;
+}
+.aboutMe p{
+  font-weight:200;
+}
+.aboutMeInner{
+  padding:10%;
+}
+.aboutMainTitle{
+  font-size:4rem;
+  font-weight:200;
+  color:rgb(48, 159, 184);
+}
+
+.aboutDetails{
+  font-size:2rem;
+  font-weight:200;
+}
+
+.aboutLabels{
+  font-weight:bold;
+}
+
+/* About Me Area Ends */
+/* Education Area Begins */
+.education ,.projects{
+  min-height:100vh;
+  background:#f0f5f2;
+  padding-top:100px;
+}
+.education img{
+  width:100%;
+}
+
+.education .educationDescription p{
+  font-size:2rem;
+  font-weight:200;
+}
+.educationInner{
+  padding-bottom:50px;
+  padding-top:50px;
+}
+.buttonDiv{
+  text-align:center;
+  padding-bottom:50px;
+  padding-top:120px;
+}
+.education h1, .skills h1, .projects h1 ,.contact h1{
+  text-align:center;
+  font-size:4rem;
+  margin-bottom:50px;
+  color:rgb(48, 159, 184);
+  font-weight:200;
+}
+.educationTitle{
+  font-weight:bold;
+}
+.education .row{
+  padding-top:40px;
+}
+.educationMore{
+  display:none;
+}
+.education p, .skills p{
+  font-size:1.3rem;
+
+}
+.education .col-md-8 p, .skills .col-md-8 p{
+  font-weight:200;
+}
+/* Education Area Ends */
+/* Skills Area Begins*/
+.stars{
+  color:  rgb(48, 159, 184);
+}
+.skills{
+  padding-top:100px;
+  min-height:100vh;
+  padding-bottom:100px;
+}
+
+.skillItem{
+  border-bottom:1px solid rgba(0,0,0,0.05);
+}
+/* Skills Area Ends */
+/* Projects Area Begins*/
+.projectImgs{
+  width:100%;
+  position:relative;
+
+  transition:1s;
+  padding-top:20px;
+}
+.projectImgs:hover{
+
+  transition:1s;
+}
+.hiddenTxt{
+  opacity:0;
+  transition: 0.5s;
+  text-align:center;
+  position:absolute;
+  top:20px;
+  height:80%;
+  width:95.5%;
+  z-index: 0;
+
+
+  background: rgba(48, 159, 184, 0.7);;
+  font-weight:200;
+
+}
+.projects{
+  padding-bottom:100px;
+}
+.projects .hiddenTxt h3{
+  padding-top:100px;
+  color:black;
+}
+.projects .hiddenTxt p{
+  color:black;
+  font-size:1.5rem !important;
+}
+.hiddenTxt:hover{
+  opacity:1;
+  transition:1s;
+}
+.projects .btn{
+  width:100%;
+  border-radius:0;
+  font-size:1.5rem;
+}
+.projectsMoreTxt{
+  display:none;
+  padding:3%;
+  background:#383838;
+  color:white;
+  z-index: 2;
+  font-weight:200;
+}
+
+.projectsEngineering{
+  padding:5%;
+}
+
+
+/* Projects Area Ends */
+/* Contact Area Begins */
+.contact{
+  padding-top:150px;
+  padding-bottom:150px;
+  font-weight:200;
+  font-size:1.3rem;
+  text-align: center;
+}
+
+.contact .fab{
+  font-size:3rem;
+  color:rgb(48, 159, 184);
+
+}
+.contact .fab:hover{
+  font-size:3rem;
+  color:black;
+
+
+}
+/* Contact Area Ends */
